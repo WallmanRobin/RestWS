@@ -1,0 +1,53 @@
+{
+    "weixin": {
+        "appid": "wx78f2a64fbc9ffd40",
+        "appsecret": "f47e3b873126115f89763dd1f885ec7e",
+        "appurl": "https://api.weixin.qq.com/sns/jscode2session"
+    },
+    "database": {
+        "type": "mysql+pymysql",
+        "user": "root",
+        "password": "zqb1qazXSW@",
+        "host": "localhost",
+        "port": "13306",
+        "name": "FC116",
+        "pool_size": 20,
+        "max_overflow": 0,
+        "pool_recycle": 3600
+    },
+    "xls":{
+        "cache": "./temp/xls/"
+    },
+    "smtp":{
+        "host":"smtp.163.com",
+        "port":"25",
+        "user":"qiubinc",
+        "password":"19791Oo5"
+    },
+    "mail":{
+        "admin":"qiubinc@163.com",
+        "signin":"luxp@gdh.com.hk"
+    },
+    "authorization": {
+        "anonymous": "anonymous",
+        "root_role": "admin",
+        "root_user": "zqb",
+        "loginParam": "login_key",
+        "loginFunc": ["org.rear.authorization.auth:verifyMD5Key"],
+        "jwt_header_name": "X-Token",
+        "secret_key": "Flask_Backend",
+        "auth_type": "jwt",
+        "jwt_life_time": 3600,
+        "jwt_iss": "Flask_BackEnd",
+        "jwt_algorithm": "HS256"
+    },
+    "session": {
+        "life_time": 3600,
+        "session_type": "filesystem",
+        "session_file_dir": "./flask_session"
+    },
+    "image": {
+        "upload": "/static/images/upload",
+        "portrait": "C:\\OneDrive\\Development\\Vue\\WebFront\\static\\images\\portraits"
+    }
+}
